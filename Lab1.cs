@@ -2,14 +2,26 @@ using System;
 					
 public class Program
 {
-	public static void Main()
+
+	public Weapon autoCannon;
+
+	public void Main()
 	{
-		Console.WriteLine("Hello World");
+
+		autoCannon = new Weapon();
+
+		Console.WriteLine(autoCannon.weaponName + " has a ammoCount of " + autoCannon.ammoCount);
+
 	}
 }
 
-public class weapons
+public class Weapon
 {
-	
+
+	public int ammoCount = 10;
+	public string weaponName = "Auto Cannon";
+	public float firePower = 15f;
+
+
 }
 
