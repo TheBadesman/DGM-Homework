@@ -10,6 +10,8 @@ public class Program
 
 		autoCannon = new Weapon();
 
+		autoCannon.ammoCount++;
+
 		Console.WriteLine(autoCannon.weaponName + " has a ammoCount of " + autoCannon.ammoCount);
 
 	}
