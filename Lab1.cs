@@ -52,3 +52,4 @@ public class Guardsmen
 	public float HWPerfered = 1.5f;
 
 }
+
