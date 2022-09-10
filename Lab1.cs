@@ -5,17 +5,10 @@ public class Program
 
 	public Weapon autoCannon;
 
+	public int owned == 1;
+
 	public void Main()
 	{
-
-		public int autoCannon.description = true;
-
-		if (autoCannon.description = true)
-		{
-			
-			Console.WriteLine(autoCannon.description);
-
-		}
 
 		autoCannon = new Weapon();
 
@@ -23,7 +16,12 @@ public class Program
 
 		Console.WriteLine(autoCannon.weaponName + " has a ammoCount of " + autoCannon.ammoCount);
 
-		Console.WriteLine(autoCannon.description);
+		if(owned = 1)
+		{
+		
+			Console.WriteLine(autoCannon.description);
+
+		}
 
 	}
 }
