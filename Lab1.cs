@@ -5,7 +5,7 @@ public class Program
 
 	public Weapon autoCannon;
 
-	public int owned == 1;
+	public int owned = 1;
 
 	public void Main()
 	{
@@ -16,7 +16,7 @@ public class Program
 
 		Console.WriteLine(autoCannon.weaponName + " has a ammoCount of " + autoCannon.ammoCount);
 
-		if(owned = 1)
+		if(owned == 1)
 		{
 		
 			Console.WriteLine(autoCannon.description);
