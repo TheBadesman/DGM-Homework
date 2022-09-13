@@ -3,36 +3,22 @@ using System;
 public class Program
 {
 
-	public Weapon autoCannon;
+	public WeaponAC autoCannon;
 
-	public bool owned = false;
+	public WeaponOperations myDescription;
 
 	public void Main()
 	{
 
-		autoCannon = new Weapon();
+		myDescription = new WeaponOperations();
+
+		autoCannon = new WeaponAC();
 
 		autoCannon.ammoCount++;
 
 		Console.WriteLine(autoCannon.weaponName + " has a Ammo Count of " + autoCannon.ammoCount);
 
-		WeaponDes("A heavy support weapon normally used by a team of guardsmen, the Auto Cannon useds heavy shells instead of energy cells to punch through both infantry and light to medium-light vehicles");
-
-	}
-
-	public void WeaponDes (string des)
-	{
-
-		if(owned == true)
-		{
-	
-			Console.WriteLine(des);
-
-		}
-		else
-		{
-			Console.WriteLine("Your squad does not currently have this weapon avalible");
-		}
+		myDescription.WeaponDes(true,"A heavy support weapon normally used by a team of guardsmen, the Auto Cannon useds heavy shells instead of energy cells to punch through both infantry and light to medium-light vehicles");
 
 	}
 
@@ -40,7 +26,7 @@ public class Program
 
 
 
-public class Weapon
+public class WeaponAC
 {
 
 	public int ammoCount = 10;
@@ -61,3 +47,23 @@ public class Guardsmen
 
 }
 
+public class WeaponOperations
+{
+
+	public void WeaponDes (bool owned,string des)
+	{
+
+		if(owned == true)
+		{
+	
+			Console.WriteLine(des);
+
+		}
+		else
+		{
+			Console.WriteLine("Your squad does not currently have this weapon avalible");
+		}
+
+	}
+
+}
