@@ -14,12 +14,19 @@ public class Program
 
 		autoCannon.ammoCount++;
 
-		Console.WriteLine(autoCannon.weaponName + " has a ammoCount of " + autoCannon.ammoCount);
+		Console.WriteLine(autoCannon.weaponName + " has a Ammo Count of " + autoCannon.ammoCount);
+
+		WeaponDes("A heavy support weapon normally used by a team of guardsmen, the Auto Cannon useds heavy shells instead of energy cells to punch through both infantry and light to medium-light vehicles");
+
+	}
+
+	public void WeaponDes (string des)
+	{
 
 		if(owned == true)
 		{
-		
-			Console.WriteLine(autoCannon.description);
+	
+			Console.WriteLine(des);
 
 		}
 		else
@@ -28,6 +35,7 @@ public class Program
 		}
 
 	}
+
 }
 
 
@@ -38,8 +46,6 @@ public class Weapon
 	public int ammoCount = 10;
 	public string weaponName = "Auto Cannon";
 	public float firePower = 15f;
-	public string description = "A heavy support weapon normally used by a team of guardsmen, the Auto Cannon useds heavy shells instead of energy cells to punch through both infantry and light to medium-light vehicles";
-
 
 }
 

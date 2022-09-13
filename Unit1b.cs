@@ -7,6 +7,7 @@ public class Program
     {
 
         DoMath(10);
+		DoMath(20);
 
     }
 
