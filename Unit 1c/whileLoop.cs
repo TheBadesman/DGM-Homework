@@ -10,7 +10,7 @@ public class Program
     while(ammo > 0)
     {
 
-        Console.WriteLine("You still have " + ammo + " left.");
+        Console.WriteLine("You still have ammo " + ammo + " left.");
         ammo--;
 
     }
